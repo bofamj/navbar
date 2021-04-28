@@ -1,0 +1,55 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.mai-continer{
+    display: flex;
+    height: 100vh;
+    height: 60px;
+    background-color: #ccc;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo{
+    height: 60px;
+    width: 60px;
+    margin-left: 30px;
+    border-radius: 50%;
+    background-color: coral;
+    padding: 10px;
+    display: flex;
+    
+}
+.nav{
+    display: flex;
+    height: 60px;
+    width: 60vh;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    font-size: 16px;
+    margin-right: 30px;
+}
+.nav ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    padding-left: 10px;
+    font-size: 16px;
+}
+.nav ul li{
+    padding-left: 40px;
+    list-style: none;
+    font-size: 20px;
+    
+}
+.nav ul li a{
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+}
+.nav ul li :hover {
+    color: rgb(146, 21, 21);
+}
