@@ -53,3 +53,9 @@
 .nav ul li :hover {
     color: rgb(146, 21, 21);
 }
+@media (max-width: 480px){
+    body {
+        background: linear-gradient(90deg, #FC466B 0%, #3F5EFB 100%);
+
+    }
+}
