@@ -3,7 +3,38 @@
     margin: 0;
     box-sizing: border-box;
 }
+
 .mai-continer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 8vh;
+    background-color: rgb(114, 112, 112);
+    font-family: 'Poppins', sans-serif;
+}
+.logo{
+    color: rgb(180, 179, 179);
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 25px;
+}
+.nav{
+    display: flex;
+    justify-content: space-around;
+    width: 35%;
+}
+.nav li{
+    list-style: none;
+}
+
+.nav a{
+    color: rgb(180, 179, 179);
+    text-decoration: none;
+    letter-spacing: 3px;
+    font-weight: bold;
+}
+
+/*.mai-continer{
     display: flex;
     height: 100vw;
     height: 60px;
@@ -78,4 +109,4 @@
         align-items: center;
     }
     
-}
+}*/
