@@ -3,6 +3,9 @@
     margin: 0;
     box-sizing: border-box;
 }
+body{
+    background: linear-gradient(90deg, #FDBB2D 0%, #3A1C71 100%);
+}
 
 .mai-continer{
     display: flex;
@@ -21,7 +24,7 @@
 .nav{
     display: flex;
     justify-content: space-around;
-    width: 35%;
+    width: 35vw;
 }
 .nav li{
     list-style: none;
@@ -33,7 +36,44 @@
     letter-spacing: 3px;
     font-weight: bold;
 }
-
+.burger{
+    display: none;
+    cursor: pointer;
+}
+.burger div{
+    width: 25px;
+    height: 3px;
+    margin: 5px;
+    background-color: rgb(250, 144, 227);
+}
+@media screen and (max-width:1000px){
+    .nav{
+        width: 400px;
+    }
+}
+@media screen and (max-width:768px){
+    body{
+        overflow-x: hidden;
+    }
+    .nav{
+        position: absolute;
+        right: 0;
+        height:92vh;
+        top:13.4vh;
+        background-color: rgb(114, 112, 112);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 50%;
+        transform: translateX(100%);
+    }
+    .burger{
+        display: block;
+    }
+}
+.nav-app{
+    transform: translateX(0%);
+}
 /*.mai-continer{
     display: flex;
     height: 100vw;
