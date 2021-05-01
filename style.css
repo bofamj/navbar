@@ -4,10 +4,14 @@
     box-sizing: border-box;
 }
 body{
-    background: linear-gradient(90deg, #FDBB2D 0%, #3A1C71 100%);
+    overflow: hidden;
 }
+/*body{
+    background: linear-gradient(90deg, #FDBB2D 0%, #3A1C71 100%);
+}*/
 
 .mai-continer{
+    width: 100vw;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -47,33 +51,41 @@ body{
     background-color: rgb(250, 144, 227);
 }
 @media screen and (max-width:1000px){
+    body{
+        overflow: hidden;
+    }
     .nav{
         width: 400px;
     }
 }
+
 @media screen and (max-width:768px){
-    body{
-        overflow-x: hidden;
-    }
+    
     .nav{
         position: absolute;
         right: 0;
         height:92vh;
-        top:13.4vh;
+        top:10vh;
         background-color: rgb(114, 112, 112);
         display: flex;
         flex-direction: column;
         align-items: center;
         width: 50%;
         transform: translateX(100%);
+        /*display: none;*/
+        transition: transform 0.5s ease-in;
     }
     .burger{
         display: block;
+        cursor: pointer;
+    }
+    .navApp{
+        transform: translateX(0%);
+        /*display:inline-flex;*/
+        
     }
 }
-.nav-app{
-    transform: translateX(0%);
-}
+
 /*.mai-continer{
     display: flex;
     height: 100vw;
